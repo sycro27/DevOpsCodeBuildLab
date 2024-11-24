@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16 # Specify the Node.js version
+    commands:
+      - echo "Installing dependencies..."
+      - npm install # Install project dependencies
+  build:
+    commands:
+      - echo "Building the project..."
+      - npm run build # Add your build script here (adjust as needed)
+  post_build:
+    commands:
+      - echo "Copying files to serve the static site..."
+      - mkdir -p /var/www/html
+      - cp -R * /var/www/html/
+artifacts:
+  files:
+    - index.html
+    - style.css
