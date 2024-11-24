@@ -1,0 +1,20 @@
+{
+  "name": "DevOps-CodeBuild",
+  "version": "1.0.0",
+  "description": "Using CodeBuild after connecting to Git Repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'Script Build'",
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "keywords": [],
+  "author": "Bilal Shakeel",
+  "license": "FAST",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
